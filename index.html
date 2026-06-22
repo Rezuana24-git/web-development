@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>💖 Mesi's Personal site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td><img src="meseret-photo.png" alt="meseret profile picture" width="250" height="250" style="border-radius: 50%"></td>
-            <td><h1>Meseret Gebisa</h1>  
-  <p><i><b><a href="https://en.wikipedia.org/wiki/Computer_science_and_engineering">Computer Science and Engineering</a></i></b> Student.</p>
-  <p>I am student at Adama Science and Technology University(<b>ASTU</b>).</p><p>I am intereseted in <b><em>Technology</em></b> especially in software development, competetive programming and digital skills.</p></td>
-        </tr>
-    </table>
-  <hr size="3" noshade>
-  <h3>My hobby,skill & interest</h3>
-  <ul>
-    <li>
-        Hobbies
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">My Skills</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+<section id="about" class="profile">
+    <div class="profile-image">
+        <img src="meseret-photo.png" alt="meseret profile picture">
+    </div>
+    <div class="profile-info">
+        <h1>Meseret Gebisa</h1>
+        <p>
+            <i><b>
+                <a href="https://en.wikipedia.org/wiki/Computer_science_and_engineering">Computer Science and Engineering</a>
+            </b></i>student.
+        </p>
+        <p> I am student at Adama science and Technology University (ASTU).</p>
+        <p>
+            I am interested in Technology especially in software development,
+            competitive programming and digital skills.
+        </p>
+    </div>
+</section>
+  <hr>
+<section id="skills">
+    <h3 class="first">my skills</h3>
+    <div class="skills-grid">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Python</div>
+    </div>
+</section> 
+<hr>
+<section>
+    <h3 class="first">My Hobby, Skill & Interest</h3>
+
+    <ul>
+        <li>
+            Hobbies
         <ul>
             <li>Read book</li>
             <li>play football</li>
@@ -38,51 +67,58 @@
         </ul>
     </li>
   </ul>
-  <h3>Courses</h3>
-  <ol type="i">
-    <li>Java</li>
-    <li>Database system</li>
-    <li>Design and Analysis of algorithm</li>
-    <li>signal and system</li>
-    <li>Discrete math</li>
-  </ol>
-  <table border="1">
-    <thead>
-        <tr>
-            <th scope="col">Course name</th>
-            <th scope="col">Semester</th>
-            <th scope="col">Grade</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Java</th>
-            <td>4th</td>
-            <td>A-</td>
-        </tr>
-        <tr>
-            <th scope="row">Database</th>
-            <td>4th</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th scope="row">DAA</th>
-            <td>4th</td>
-            <td>B+</td>
-        </tr>
-        <tr>
-            <th scope="row">Discrete</th>
-            <td>4th</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <th scope="row">Signal</th>
-            <td>4th</td>
-            <td>A+</td>
-        </tr>
-    </tbody>
-  </table>
-  <h3>Contact me</h3>
+</section>
+  <hr>
+<section id="courses">
+    <h3 class="sec">Courses</h3>
+    <ol type="i">
+
+        <li>Java</li>
+        <li>Database system</li>
+        <li>Design and Analysis of algorithm</li>
+        <li>signal and system</li>
+        <li>Discrete math</li>
+    </ol>
+    <table border="1">
+        <thead>
+            <tr>
+                <th scope="col">Course name</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Java</th>
+                <td>4th</td>
+                <td>A-</td>
+            </tr>
+            <tr>
+                <th scope="row">Database</th>
+                <td>4th</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th scope="row">DAA</th>
+                <td>4th</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <th scope="row">Discrete</th>
+                <td>4th</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th scope="row">Signal</th>
+                <td>4th</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<hr>
+<section id="contact">
+  <h3 class="third">Contact me</h3>
   <form>
     <label>Name:</label><br>
     <input type="text" placeholder="Enter your Name"><br>
@@ -90,11 +126,11 @@
     <input type="email" placeholder="Enter your Email"><br>
     <label>Message:</label><br>
     <textarea placeholder="Write ur message here.." rows="4" cols="30"></textarea>
-    <input type="color" value="">
-    <input type="submit" value="Submit">
+    <button type="submit">submit</button>
 
   </form>
-  <hr size="3" noshade>
+</section>
+  <hr>
   <a href="https://www.w3schools.com" target="_blank">Learn from W3Schools</a> <br>
   <iframe 
      src="https://www.youtube.com/embed/GxmfcnU3feo?si=W5ODJJc8tGP13am_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"
